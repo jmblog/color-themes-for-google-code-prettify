@@ -1,0 +1,253 @@
+.change_theme(@basicColor) {
+
+  // Modify the bootstrap styles
+  h1 {
+    text-shadow: 0px 1px 1px #eee;
+    font-size: 28px;
+  }
+  
+  h1, h2, h3 {
+    margin-bottom: .5em;
+  }
+
+  a {
+    color: @basicColor;
+  }
+  
+  a:hover {
+    color: darken(@basicColor, 15%);
+  }
+  
+  code {
+    padding: 2px 4px;
+    color: #d14;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+  }
+  
+  hr {
+    border-style: dashed;
+  }
+  
+  .container {
+    position: relative;
+    padding: 5px 0;
+  }
+  
+  .navbar {
+    border-bottom: 3px solid @basicColor;
+    .box-shadow(rgba(0, 0, 0, 0.5) 0px 5px 5px -4px);
+    .navbar-inner {
+      .border-radius(0);
+    }
+    .container {
+      width: (@gridColumnWidth * @gridColumns) + (@gridGutterWidth * (@gridColumns - 1));
+      padding: 0;
+    }
+    
+    .brand {
+      color: @white;
+    }
+  }
+  
+  .page-header {
+    margin: @baseLineHeight * 1.5 0 @baseLineHeight;
+    padding-bottom: 0;
+    border-bottom: none;
+    position: relative;
+    
+    h1 {
+       margin-bottom: @baseLineHeight / 2;
+    }
+    
+    .btn-area {
+      position: absolute;
+      top: 15px;
+      right: 0;
+      text-align: center;
+    }
+    .note {
+      font-size: 12px;
+    }
+  }
+  
+  .thumbnail {
+    background: @white;
+    -webkit-transition: border-color .1s linear;
+    transition: border-color .1s linear;
+
+    img {
+      border: 1px solid #ccc;
+    }
+  }
+  
+  .thumbnail:hover {
+    background: #f9f9f9;
+    border-color: @linkColor;
+    -webkit-transition: border-color .25s linear;
+    -moz-transition: border-color .25s linear;
+    -o-transition: border-color .25s linear;
+    -ms-transition: border-color .25s linear;
+    transition: border-color .25s linear;
+    .box-shadow(0 1px 4px rgba(0,105,214,.25));
+  }
+  
+  .btn {
+    font-family: @headingsFontFamily;
+    position: relative;
+  }
+  
+  .btn-large {
+    padding-left: 36px;
+    
+    i {
+      font-size: 27px;
+      position: absolute;
+      top: 6px;
+      left: 10px;
+    }
+  }
+  
+  
+  // Styles by myself
+  .social-buttons {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background: #eee;
+    .clearfix();
+    .border-radius(3px);
+    height: 20px;
+    
+    li {
+      float: left;
+    }
+  }
+  
+  .header {
+    margin-top: 10px;
+  }
+  
+  .header-top {
+    background: url(../img/palette.png) repeat-x;
+    height: 5px;
+    .box-shadow(rgba(0, 0, 0, 0.5) 0px 3px 3px -1px);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+  }
+  
+  .main {
+    padding: 20px 0;
+  }
+  
+  .filter {
+    .clearfix();
+  
+    dt {
+      color: #999;
+      font-weight: normal;
+      margin-right: .3em;
+    }
+  
+    dt, dd {
+      float: left;
+      display: inline;
+    }
+  
+    dd {
+      margin-left: .3em;
+      a {
+        text-decoration: none;
+        .border-radius(12px);
+        padding: 3px 9px;
+      }
+    }
+  
+    dd.active {
+      a {
+        background: @basicColor;
+        color: #fff;
+      }
+      
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  
+  .adsense {
+    text-align: center;
+    margin-bottom: @baseLineHeight;
+  }
+  
+  body {
+    padding-bottom: @baseLineHeight;
+  }
+  
+  .sidebar {
+    margin: 10px 0 @baseLineHeight;
+    padding: 9px;
+    background: #fff;
+    border: 1px solid #ccc;
+    .border-radius(3px);
+    
+  }
+  .sidebar.adsense {
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+}
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}

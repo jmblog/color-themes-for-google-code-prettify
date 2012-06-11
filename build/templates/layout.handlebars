@@ -1,0 +1,137 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <link rel="dns-prefetch" href="//ajax.googleapis.com" />
+{{#if theme}}
+  <title>{{name}} - {{site_name}}</title>
+  <meta name="description" content="{{name}} is a beautiful color theme for Google Code Prettify.">
+{{else}}
+  <title>{{site_name}}</title>
+  <meta name="description" content="The selection of beautiful color themes for Google Code Prettify.">
+{{/if}}
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
+  <link rel="stylesheet" href="{{root_uri}}/css/style.css">
+{{#if theme}}
+  <link rel="stylesheet" href="{{root_uri}}/css/themes/{{snake_case}}.css">
+{{/if}}
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+  <link rel="canonical" href="{{root_uri}}/{{#if theme}}{{snake_case}}/{{/if}}" />
+{{#if theme}}
+  <meta property="og:title" content="{{name}} - {{site_name}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{root_uri}}/{{snake_case}}/" />
+  <meta property="og:image" content="{{root_uri}}/img/{{snake_case}}-clipped.png" />
+  <meta property="og:description" content="{{name}} is a beautiful color theme for Google Code Prettify." />
+{{else}}
+  <meta property="og:title" content="{{site_name}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{root_uri}}/" />
+  <meta property="og:image" content="{{root_uri}}/img/tomorrow-night-clipped.png" />
+  <meta property="og:description" content="The selection of beautiful color themes for Google Code Prettify." />
+{{/if}}
+  <meta property="og:site_name" content="{{site_name}}" />
+  <meta property="fb:admins" content="1421286829" />
+  <script src="{{root_uri}}/js/modernizr-2.5.3.min.js"></script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-32033901-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body id="top">
+  <div id="fb-root"></div>
+  <script>
+    (function(d){
+      var po = d.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+     }(document));
+  </script>
+  <div class="header-top"></div>
+  <header class="header">
+    <div class="container">
+      {{#if theme}}
+      <a href="{{root_uri}}/"><i class="icon icon-arrow-left"></i> Home</a>
+      {{/if}}
+      <div class="page-header">
+      {{#if theme}}
+        <h1>{{name}}</h1>
+        <p>{{name}} theme for Google Code Prettify. The original is by <a href="{{url}}" target="_blank">{{author}}</a>.</p>
+        <div class="btn-area">
+          <a class="btn btn-large btn-primary" href="{{root_uri}}/css/themes/{{snake_case}}.css"><i class="icon-download icon-white"></i> Download CSS file</a>
+          <br/>
+          <a class="note" href="#usage"><i class="icon icon-leaf"></i> How to use it</a>
+        </div>
+      {{else}}
+        <h1>{{site_name}}</h1>
+        <p>Make your code snippets more beautiful. All syntax highlighting color themes on this page are for <a href="https://code.google.com/p/google-code-prettify/">Google Code Prettify</a>.</p>
+      {{/if}}
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <ul class="social-buttons">
+      {{#if theme}}
+      <li><a href="http://pinterest.com/pin/create/button/?description={{name}}%20-%20Color%20theme%20for%20Google%20Code%20Prettify&url=http%3A%2F%2Fjmblog.github.com%2Fcolor-themes-for-google-code-prettify%2F{{snake_case}}%2F&media=http%3A%2F%2Fjmblog.github.com%2Fcolor-themes-for-google-code-prettify%2F{{snake_case}}-clipped.png" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
+  </li>
+      <li><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+  <script></script></li>
+      <li><div class="g-plusone" data-size="medium" data-href="{{root_uri}}/{{snake_case}}/"></div></li>
+      {{else}}
+      <li><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script></script></li>
+      <li><div class="g-plusone" data-size="medium" data-href="{{root_uri}}/"></div></li>
+      {{/if}}
+    </ul>
+  </div>
+  {{> body}}
+  <div class="container">
+    <div class="row">
+      <div class="span6">
+        <h3 id="usage"><i class="icon icon-leaf icon-large"></i> Usage</h3>
+        <p>It's pretty simple.</p>
+        <ol>
+          <li><a href="http://google-code-prettify.googlecode.com/svn/trunk/README.html" target="_blank">Setup</a> the Google Code Prettify.</li>
+          <li>Replace <code>prettify.css</code> with a downloaded CSS file.</li>
+          <li>Beautiful.</li>
+        </ol>
+      </div>
+      <div class="span6">
+        <h3><i class="icon icon-github-sign icon-large"></i> Issues or Feedback</h3>
+        <p>Have any requests or problems? Please report them to the <a href="https://github.com/jmblog/color-themes-for-google-code-prettify/issues">GitHub issue tracker</a>. Feel free to contact me through GitHub, fork the project and send a pull request.</p>
+      </div>
+    </div>
+  </div>
+  <footer class="container">
+    <hr>
+    <p class="pull-right"><a href="#top"><i class="icon icon-chevron-up"></i> Back to top</a></p>
+    <p>This project is maintained by <a href="https://github.com/jmblog">jmblog</a>.<br />
+      Google Code Prettify is licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.<br />
+      Hosted on <a href="http://pages.github.com/">Github</a>. Web fonts from <a href="http://www.google.com/webfonts">Google</a> and <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>. </p>
+  </footer>
+  <script src="//platform.twitter.com/widgets.js"></script>
+  <script src="//assets.pinterest.com/js/pinit.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/jquery-1.7.2.min.js"><\/script>')</script>
+  {{#if theme}}
+  <script src="{{root_uri}}/js/prettify.js"></script>
+  <script src="{{root_uri}}/js/lang-css.js"></script>
+  {{else}}
+  <script src="{{root_uri}}/js/jquery.isotope.min.js"></script>
+  {{/if}}
+  <script src="{{root_uri}}/js/jquery.smooth-scroll.min.js"></script>
+  <script src="{{root_uri}}/js/script.min.js"></script>
+</body>
+</html>

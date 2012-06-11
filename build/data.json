@@ -1,0 +1,53 @@
+{ "themes":
+  [
+    {
+      "name": "Tomorrow Night",
+      "author": "Chris Kempson",
+      "url": "https://github.com/chriskempson/tomorrow-theme",
+      "lightness": "dark",
+      "published": true
+    },
+    {
+      "name": "Tomorrow",
+      "author": "Chris Kempson",
+      "url": "https://github.com/chriskempson/tomorrow-theme",
+      "lightness": "light",
+      "published": true
+    },
+    {
+      "name": "Tomorrow Night Eighties",
+      "author": "Chris Kempson",
+      "url": "https://github.com/chriskempson/tomorrow-theme",
+      "lightness": "dark",
+      "published": true
+    },
+    {
+      "name": "Tomorrow Night Blue",
+      "author": "Chris Kempson",
+      "url": "https://github.com/chriskempson/tomorrow-theme",
+      "lightness": "dark",
+      "published": true
+    },
+    {
+      "name": "Tomorrow Night Bright",
+      "author": "Chris Kempson",
+      "url": "https://github.com/chriskempson/tomorrow-theme",
+      "lightness": "dark",
+      "published": true
+    },
+    {
+      "name": "Hemisu Dark",
+      "author": "Noah Frederick",
+      "url": "http://noahfrederick.com/vim-color-scheme-hemisu/",
+      "lightness": "dark",
+      "published": true
+    },
+    {
+      "name": "Hemisu Light",
+      "author": "Noah Frederick",
+      "url": "http://noahfrederick.com/vim-color-scheme-hemisu/",
+      "lightness": "light",
+      "published": true
+    }
+  ]
+}
