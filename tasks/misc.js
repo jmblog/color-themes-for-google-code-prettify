@@ -1,5 +1,5 @@
 var rimraf = require('rimraf'),
-    mkdirp = require('mkdirp');
+    mkdirp = require('mkdirp'),
     _ = require('underscore');
 
 module.exports = function(grunt) {

@@ -25,7 +25,6 @@ module.exports = function(grunt) {
   });
     
   grunt.registerTask('publish', 'Rebuild the pages', function() {
-    this.requires('mkdirs');
     ['staging', 'production'].forEach(_publish);
   });
   
