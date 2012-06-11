@@ -1,0 +1,36 @@
+  <div class="container main">
+    <dl id="filter" class="filter">
+      <dt>Filter:</dt>
+      <dd class="active"><a href="#" data-filter="*">All Themes</a></dd>
+      <dd><a href="#" data-filter=".dark">Dark</a></dd>
+      <dd><a href="#" data-filter=".light">Light</a></dd>
+    </dl>
+    <ul id="thumbnails" class="thumbnails">
+      {{#themes}}
+      <li class="span4 item {{lightness}}">
+         <div class="thumbnail">
+          <a href="{{snake_case}}/"><img src="img/{{snake_case}}-clipped.png" width="288" height="183" alt="{{name}}"></a>
+          <div class="caption">
+            <h4>{{name}}</h4>
+          </div>
+        </div>
+      </li>
+      {{/themes}}
+    </ul>
+  </div>
+  
+  <div class="container">
+    <div class="adsense">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9899595873921003";
+/* sytaxhighlightthemes_google_code_prettify */
+google_ad_slot = "2906242697";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+    </div>
+  </div>
