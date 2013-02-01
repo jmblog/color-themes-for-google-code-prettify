@@ -4,109 +4,137 @@
 /* SPAN elements with the classes below are added by prettyprint. */
 /* plain text */
 .pln {
-  color: #eeeeee; }
+  color: #eeeeee;
+}
 
 @media screen {
   /* string content */
   .str {
-    color: #b1d631; }
+    color: #b1d631;
+  }
 
   /* a keyword */
   .kwd {
-    color: #b1d631; }
+    color: #b1d631;
+  }
 
   /* a comment */
   .com {
-    color: #777777; }
+    color: #777777;
+  }
 
   /* a type name */
   .typ {
-    color: #bbffaa; }
+    color: #bbffaa;
+  }
 
   /* a literal value */
   .lit {
-    color: #9fd3e6; }
+    color: #9fd3e6;
+  }
 
   /* punctuation */
   .pun {
-    color: #eeeeee; }
+    color: #eeeeee;
+  }
 
   /* lisp open bracket */
   .opn {
-    color: #eeeeee; }
+    color: #eeeeee;
+  }
 
   /* lisp close bracket */
   .clo {
-    color: #eeeeee; }
+    color: #eeeeee;
+  }
 
   /* a markup tag name */
   .tag {
-    color: #eeeeee; }
+    color: #eeeeee;
+  }
 
   /* a markup attribute name */
   .atn {
-    color: #b1d631; }
+    color: #b1d631;
+  }
 
   /* a markup attribute value */
   .atv {
-    color: #bbffaa; }
+    color: #bbffaa;
+  }
 
   /* a declaration */
   .dec {
-    color: #eeeeee; }
+    color: #eeeeee;
+  }
 
   /* a variable name */
   .var {
-    color: #eeeeee; }
+    color: #eeeeee;
+  }
 
   /* a function name */
   .fun {
-    color: #9fd3e6; } }
+    color: #9fd3e6;
+  }
+}
 /* Use higher contrast and text-weight for printable form. */
 @media print, projection {
   .str {
-    color: #060; }
+    color: #006600;
+  }
 
   .kwd {
     color: #006;
-    font-weight: bold; }
+    font-weight: bold;
+  }
 
   .com {
     color: #600;
-    font-style: italic; }
+    font-style: italic;
+  }
 
   .typ {
     color: #404;
-    font-weight: bold; }
+    font-weight: bold;
+  }
 
   .lit {
-    color: #044; }
+    color: #004444;
+  }
 
   .pun, .opn, .clo {
-    color: #440; }
+    color: #444400;
+  }
 
   .tag {
     color: #006;
-    font-weight: bold; }
+    font-weight: bold;
+  }
 
   .atn {
-    color: #404; }
+    color: #440044;
+  }
 
   .atv {
-    color: #060; } }
+    color: #006600;
+  }
+}
 /* Style */
 pre.prettyprint {
   background: black;
-  font-family: Menlo, Monaco, Consolas, monospace;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
   font-size: 12px;
   line-height: 1.5;
-  border: 1px solid #ccc;
-  padding: 10px; }
+  border: 1px solid #cccccc;
+  padding: 10px;
+}
 
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
   margin-top: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 /* IE indents via margin-left */
 li.L0,
@@ -119,7 +147,8 @@ li.L6,
 li.L7,
 li.L8,
 li.L9 {
-  /* */ }
+  /* */
+}
 
 /* Alternate shading for lines */
 li.L1,
@@ -127,4 +156,5 @@ li.L3,
 li.L5,
 li.L7,
 li.L9 {
-  /* */ }
+  /* */
+}

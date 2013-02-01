@@ -3,109 +3,137 @@
 /* SPAN elements with the classes below are added by prettyprint. */
 /* plain text */
 .pln {
-  color: #333333; }
+  color: #333333;
+}
 
 @media screen {
   /* string content */
   .str {
-    color: #dd1144; }
+    color: #dd1144;
+  }
 
   /* a keyword */
   .kwd {
-    color: #333333; }
+    color: #333333;
+  }
 
   /* a comment */
   .com {
-    color: #999988; }
+    color: #999988;
+  }
 
   /* a type name */
   .typ {
-    color: #445588; }
+    color: #445588;
+  }
 
   /* a literal value */
   .lit {
-    color: #445588; }
+    color: #445588;
+  }
 
   /* punctuation */
   .pun {
-    color: #333333; }
+    color: #333333;
+  }
 
   /* lisp open bracket */
   .opn {
-    color: #333333; }
+    color: #333333;
+  }
 
   /* lisp close bracket */
   .clo {
-    color: #333333; }
+    color: #333333;
+  }
 
   /* a markup tag name */
   .tag {
-    color: navy; }
+    color: navy;
+  }
 
   /* a markup attribute name */
   .atn {
-    color: teal; }
+    color: teal;
+  }
 
   /* a markup attribute value */
   .atv {
-    color: #dd1144; }
+    color: #dd1144;
+  }
 
   /* a declaration */
   .dec {
-    color: #333333; }
+    color: #333333;
+  }
 
   /* a variable name */
   .var {
-    color: teal; }
+    color: teal;
+  }
 
   /* a function name */
   .fun {
-    color: #990000; } }
+    color: #990000;
+  }
+}
 /* Use higher contrast and text-weight for printable form. */
 @media print, projection {
   .str {
-    color: #060; }
+    color: #006600;
+  }
 
   .kwd {
     color: #006;
-    font-weight: bold; }
+    font-weight: bold;
+  }
 
   .com {
     color: #600;
-    font-style: italic; }
+    font-style: italic;
+  }
 
   .typ {
     color: #404;
-    font-weight: bold; }
+    font-weight: bold;
+  }
 
   .lit {
-    color: #044; }
+    color: #004444;
+  }
 
   .pun, .opn, .clo {
-    color: #440; }
+    color: #444400;
+  }
 
   .tag {
     color: #006;
-    font-weight: bold; }
+    font-weight: bold;
+  }
 
   .atn {
-    color: #404; }
+    color: #440044;
+  }
 
   .atv {
-    color: #060; } }
+    color: #006600;
+  }
+}
 /* Style */
 pre.prettyprint {
   background: white;
-  font-family: Menlo, Monaco, Consolas, monospace;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
   font-size: 12px;
   line-height: 1.5;
-  border: 1px solid #ccc;
-  padding: 10px; }
+  border: 1px solid #cccccc;
+  padding: 10px;
+}
 
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
   margin-top: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 /* IE indents via margin-left */
 li.L0,
@@ -118,7 +146,8 @@ li.L6,
 li.L7,
 li.L8,
 li.L9 {
-  /* */ }
+  /* */
+}
 
 /* Alternate shading for lines */
 li.L1,
@@ -126,4 +155,5 @@ li.L3,
 li.L5,
 li.L7,
 li.L9 {
-  /* */ }
+  /* */
+}
