@@ -374,7 +374,7 @@ hr{border-style:dashed;}
 .btn-large{padding-left:36px;}.btn-large i{font-size:27px;position:absolute;top:6px;left:10px;}
 .social-buttons{list-style-type:none;margin:0;padding:10px;background:#eee;*zoom:1;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;height:20px;}.social-buttons:before,.social-buttons:after{display:table;content:"";}
 .social-buttons:after{clear:both;}
-.social-buttons li{float:left;}
+.social-buttons li{float:left;min-width:90px;}
 .header{margin-top:10px;}
 .header-top{background:url(../img/palette.png) repeat-x;height:5px;-webkit-box-shadow:rgba(0, 0, 0, 0.5) 0px 3px 3px -1px;-moz-box-shadow:rgba(0, 0, 0, 0.5) 0px 3px 3px -1px;box-shadow:rgba(0, 0, 0, 0.5) 0px 3px 3px -1px;position:fixed;width:100%;z-index:999;top:0;left:0;}
 .main{padding:20px 0;}
