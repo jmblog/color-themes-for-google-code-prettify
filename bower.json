@@ -1,0 +1,42 @@
+{
+  "name": "color-themes-for-google-code-prettify",
+  "version": "0.0.1",
+  "main": [
+    "./css/themes/github.css",
+  	"./css/themes/hemisu-dark.css",
+  	"./css/themes/hemisu-light.css",
+  	"./css/themes/tomorrow.css",
+  	"./css/themes/tomorrow-night.css",
+  	"./css/themes/tomorrow-night-blue.css",
+  	"./css/themes/tomorrow-night-bright.css",
+  	"./css/themes/tomorrow-night-eighties.css",
+  	"./css/themes/vibrant-ink.css"
+  ],
+  "homepage": "https://github.com/jmblog/color-themes-for-google-code-prettify",
+  "authors": [
+    "Yoshihide Jimbo <yjimbo@gmail.com>"
+  ],
+  "description": "Syntax highlighting color themes for Google Code Prettify",
+  "keywords": [
+    "Prettify"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "font",
+    "github",
+    "hemisu-dark",
+    "hemisu-light",
+    "img",
+    "js",
+    "tomorrow-night-blue",
+    "tomorrow-night-bright",
+    "tomorrow-night-eighties",
+    "tomorrow-night",
+    "tomorrow",
+    "vibrant-ink",
+    "channel.html",
+    "index.html",
+    "robots.txt",
+    "sitemap.xml"
+  ]
+}
