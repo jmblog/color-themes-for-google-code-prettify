@@ -62,6 +62,146 @@
       "url": "http://noahfrederick.com/vim-color-scheme-hemisu/",
       "lightness": "light",
       "published": true
+    },
+    {
+      "name": "Atelier Cave Dark",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/cave/",
+      "lightness": "dark",
+      "published": true
+    },
+    {
+      "name": "Atelier Cave Light",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/cave/",
+      "lightness": "light",
+      "published": true
+    },
+    {
+      "name": "Atelier Dune Dark",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/dune/",
+      "lightness": "dark",
+      "published": true
+    },
+    {
+      "name": "Atelier Dune Light",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/dune/",
+      "lightness": "light",
+      "published": true
+    },
+    {
+      "name": "Atelier Estuary Dark",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/estuary/",
+      "lightness": "dark",
+      "published": true
+    },
+    {
+      "name": "Atelier Estuary Light",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/estuary/",
+      "lightness": "light",
+      "published": true
+    },
+    {
+      "name": "Atelier Forest Dark",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/forest/",
+      "lightness": "dark",
+      "published": true
+    },
+    {
+      "name": "Atelier Forest Light",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/forest/",
+      "lightness": "light",
+      "published": true
+    },
+    {
+      "name": "Atelier Heath Dark",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/heath/",
+      "lightness": "dark",
+      "published": true
+    },
+    {
+      "name": "Atelier Heath Light",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/heath/",
+      "lightness": "light",
+      "published": true
+    },
+    {
+      "name": "Atelier Lakeside Dark",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/lakeside/",
+      "lightness": "dark",
+      "published": true
+    },
+    {
+      "name": "Atelier Lakeside Light",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/lakeside/",
+      "lightness": "light",
+      "published": true
+    },
+    {
+      "name": "Atelier Plateau Dark",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/plateau/",
+      "lightness": "dark",
+      "published": true
+    },
+    {
+      "name": "Atelier Plateau Light",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/plateau/",
+      "lightness": "light",
+      "published": true
+    },
+    {
+      "name": "Atelier Savanna Dark",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/savanna/",
+      "lightness": "dark",
+      "published": true
+    },
+    {
+      "name": "Atelier Savanna Light",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/savanna/",
+      "lightness": "light",
+      "published": true
+    },
+    {
+      "name": "Atelier Seaside Dark",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/seaside/",
+      "lightness": "dark",
+      "published": true
+    },
+    {
+      "name": "Atelier Seaside Light",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/seaside/",
+      "lightness": "light",
+      "published": true
+    },
+    {
+      "name": "Atelier Sulphurpool Dark",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool/",
+      "lightness": "dark",
+      "published": true
+    },
+    {
+      "name": "Atelier Sulphurpool Light",
+      "author": "Bram de Haan",
+      "url": "http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool/",
+      "lightness": "light",
+      "published": true
     }
   ]
 }
