@@ -1,0 +1,17 @@
+$background:    #f1efee;
+$foreground:    #1b1918;
+$string:        #7b9726;
+$keyword:       #6666ea;
+$comment:       #9c9491;
+$type:          #407ee7;
+$literal:       #df5320;
+$punctuation:   $foreground;
+$open_bracket:  $foreground;
+$close_bracket: $foreground;
+$markup_tag:    #f22c40;
+$markup_attr_n: #df5320;
+$markup_attr_v: #3d97b8;
+$declaration:   #df5320;
+$variable:      #f22c40;
+$function:      #407ee7;
+$linenums:      $comment;

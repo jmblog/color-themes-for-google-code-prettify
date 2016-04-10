@@ -1,0 +1,17 @@
+$background:    #000;
+$foreground:    #fff;
+$string:        #6f0;
+$keyword:       #f60;
+$comment:       #93c;
+$type:          #458;
+$literal:       #458;
+$punctuation:   $foreground;
+$open_bracket:  $foreground;
+$close_bracket: $foreground;
+$markup_tag:    $foreground;
+$markup_attr_n: #9c9;
+$markup_attr_v: #6f0;
+$declaration:   $foreground;
+$variable:      $foreground;
+$function:      #fc0;
+$linenums:      darken($foreground, 60%);

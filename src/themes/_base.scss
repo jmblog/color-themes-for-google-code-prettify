@@ -1,0 +1,125 @@
+$foreground:    #000 !default;
+$background:    #fff !default;
+$string:        #080 !default; // string content
+$keyword:       #008 !default; // a keyword
+$comment:       #800 !default; // a comment
+$type:          #606 !default; // a type name
+$literal:       #066 !default; // literal value
+$punctuation:   #660 !default; // punctuation
+$open_bracket:  #660 !default; // lisp open bracket
+$close_bracket: #660 !default; // lisp close bracket
+$markup_tag:    #008 !default; // a markup tag name
+$markup_attr_n: #606 !default; // a markup attribute name
+$markup_attr_v: #080 !default; // a markup attribute value
+$declaration:   #606 !default; // a declaration
+$variable:      #606 !default; // a variable name
+$function:      #f00 !default; // a function name
+$linenums:      $comment !default; // Line numbers
+
+$font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
+
+@mixin prettyprint() {
+  .prettyprint {
+    background: $background;
+    font-family: $font-family;
+    border: 0 !important;
+  }
+
+  .pln {
+    color: $foreground;
+  }
+
+  @media screen {
+    /* string content */
+    .str {
+      color: $string;
+    }
+
+    /* keyword */
+    .kwd {
+      color: $keyword;
+    }
+
+    /* comment */
+    .com {
+      color: $comment;
+    }
+
+    /* type name */
+    .typ {
+      color: $type;
+    }
+
+    /* literal value */
+    .lit {
+      color: $literal;
+    }
+
+    /* punctuation */
+    .pun {
+      color: $punctuation;
+    }
+
+    /* lisp open bracket */
+    .opn {
+      color: $open_bracket;
+    }
+
+    /* lisp close bracket */
+    .clo {
+      color: $close_bracket;
+    }
+
+    /* markup tag name */
+    .tag {
+      color: $markup_tag;
+    }
+
+    /* markup attribute name */
+    .atn {
+      color: $markup_attr_n;
+    }
+
+    /* markup attribute value */
+    .atv {
+      color: $markup_attr_v;
+    }
+
+    /* declaration */
+    .dec {
+      color: $declaration;
+    }
+
+    /* variable name */
+    .var {
+      color: $variable;
+    }
+
+    /* function name */
+    .fun {
+      color: $function;
+    }
+  }
+
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $linenums;
+  }
+
+  li.L0,
+  li.L1,
+  li.L2,
+  li.L3,
+  li.L4,
+  li.L5,
+  li.L6,
+  li.L7,
+  li.L8,
+  li.L9 {
+    padding-left: 1em;
+    background-color: $background;
+    list-style-type: decimal;
+  }
+}

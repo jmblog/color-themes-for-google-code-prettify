@@ -1,0 +1,22 @@
+$font-size-root: 16px;
+$font-size-base: 1rem;
+$font-family-sans-serif: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-monospace: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
+
+$octicons-font-path: 'octicons/';
+
+$link-transition-duration: .1s;
+$link-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 34em,
+  // Medium screen / tablet
+  md: 48em,
+  // Large screen / desktop
+  lg: 62em,
+  // Extra large screen / wide desktop
+  xl: 75em
+) !default;

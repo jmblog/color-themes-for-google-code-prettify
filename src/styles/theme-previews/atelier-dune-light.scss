@@ -1,0 +1,6 @@
+@import "../../themes/colors/atelier-dune-light";
+@import "../../themes/base";
+
+#atelier-dune-light {
+  @include prettyprint();
+}

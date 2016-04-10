@@ -1,0 +1,6 @@
+@import "../../themes/colors/atelier-cave-dark";
+@import "../../themes/base";
+
+#atelier-cave-dark {
+  @include prettyprint();
+}
