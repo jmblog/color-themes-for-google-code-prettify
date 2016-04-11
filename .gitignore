@@ -8,3 +8,4 @@ node_modules
 *.css.map
 dist/index.html
 dist/styles/
+dist/scripts/

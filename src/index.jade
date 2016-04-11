@@ -61,7 +61,7 @@ html(lang="en")
                   .theme__meta Ported by !{theme.ported_by}
                 
                 .theme__download
-                  a.button.-compact.-inverted(href="themes/#{theme.id}.css") Download
+                  a.button.-compact.-inverted.js-download-theme(href="themes/#{theme.id}.css" data-theme-id="#{theme.id}" target="_blank") Download
 
               .theme__preview(id="#{theme.id}")
                 pre.prettyprint.linenums.lang-html
@@ -100,3 +100,4 @@ html(lang="en")
 
       ga('create', 'UA-32033901-2', 'auto');
       ga('send', 'pageview');
+    script(src="scripts/scripts.js")

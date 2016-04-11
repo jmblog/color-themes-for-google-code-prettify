@@ -19,6 +19,7 @@ gulp.task('build', gulp.series(
   gulp.parallel(
     view,
     gulp.series(styles, themes, themesMin, concatStyles),
+    scripts,
     images,
     octicons
   )
@@ -98,6 +99,12 @@ function concatStyles() {
     .pipe(gulp.dest('dist/styles'));
 }
 
+function scripts() {
+  return gulp.src('src/scripts/**/*.js')
+    .pipe($.uglify())
+    .pipe(gulp.dest('dist/scripts'));
+}
+
 function images() {
   return gulp.src('src/images/**/*')
     .pipe($.imagemin())
@@ -122,6 +129,7 @@ function serve() {
   gulp.watch('src/themes/**/*.scss', gulp.series(styles, themes, themesMin));
   gulp.watch('src/themes.json', gulp.series(loadJSON, view, reloadBrowser));
   gulp.watch('src/**/*.jade', gulp.series(view, reloadBrowser));
+  gulp.watch('src/scripts/**/*.js', gulp.series(scripts, reloadBrowser));
   gulp.watch('src/images/**/*', gulp.series(reloadBrowser));
 }
 
