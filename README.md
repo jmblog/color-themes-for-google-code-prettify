@@ -10,12 +10,6 @@
 npm install color-themes-for-google-code-prettify
 ```
 
-**bower**
-
-```sh
-bower install color-themes-for-google-code-prettify
-```
-
 **Download**
 
 See https://github.com/jmblog/color-themes-for-google-code-prettify/releases
