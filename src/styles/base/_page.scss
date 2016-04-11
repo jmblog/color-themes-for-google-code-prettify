@@ -1,0 +1,13 @@
+html {
+  font-size: $font-size-root;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  line-height: 1.5;
+  color: $color-text;
+  background-color: #fff;
+  font-smoothing: antialiased;
+}

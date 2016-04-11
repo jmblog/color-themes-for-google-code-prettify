@@ -1,0 +1,6 @@
+@import "../../themes/colors/vibrant-ink";
+@import "../../themes/base";
+
+#vibrant-ink {
+  @include prettyprint();
+}

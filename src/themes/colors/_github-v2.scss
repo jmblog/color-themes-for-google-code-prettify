@@ -1,0 +1,17 @@
+$background:    #fff;
+$foreground:    #333;
+$string:        #183691;
+$keyword:       #a71d5d;
+$comment:       #969896;
+$type:          #0086b3;
+$literal:       #0086b3;
+$punctuation:   $foreground;
+$open_bracket:  $foreground;
+$close_bracket: $foreground;
+$markup_tag:    #000080;
+$markup_attr_n: #795da3;
+$markup_attr_v: #183691;
+$declaration:   $foreground;
+$variable:      #008080;
+$function:      #900;
+$linenums:      lighten($foreground, 60%);

@@ -1,0 +1,6 @@
+@import "../../themes/colors/atelier-seaside-light";
+@import "../../themes/base";
+
+#atelier-seaside-light {
+  @include prettyprint();
+}

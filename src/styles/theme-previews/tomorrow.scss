@@ -1,0 +1,7 @@
+@import "../../themes/colors/tomorrow";
+@import "../../themes/base-tomorrow";
+@import "../../themes/base";
+
+#tomorrow {
+  @include prettyprint();
+}

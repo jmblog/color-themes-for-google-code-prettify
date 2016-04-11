@@ -1,0 +1,47 @@
+.cover {
+  text-align: center;
+  background-color: $base07;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+
+  &__title {
+    display: inline-block;
+    border: 7px solid $base00;
+    padding: 1rem 2rem;
+    font-size: 2.4rem;
+    font-family: "Fjalla One", $font-family-sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.7;
+
+    @include media-breakpoint-up(lg) {
+      & {
+        font-size: 3.4rem;
+      }
+    }
+
+    .preposition {
+      display: block;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    color: $base02;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-up(lg) {
+      & {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__buttons {
+    .button {
+      margin-bottom: .5rem;
+    }
+  }
+}

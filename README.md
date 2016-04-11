@@ -1,6 +1,29 @@
-color-themes-for-google-code-prettify
-=====================================
+# Color themes for Google Code Prettify
 
-Color themes for google code prettify.
+> The selection of beautiful color themes for Google Code Prettify.
 
-see http://jmblog.github.com/color-themes-for-google-code-prettify/
+## Installation
+
+**npm**
+
+```sh
+npm install color-themes-for-google-code-prettify
+```
+
+**bower**
+
+```sh
+bower install color-themes-for-google-code-prettify
+```
+
+**Download**
+
+See https://github.com/jmblog/color-themes-for-google-code-prettify/releases
+
+## Contributing
+
+Please read the [contribution guidelines](CONTRIBUTING.md) in order to make the
+contribution process easy and effective for everyone involved.
+
+## License
+Code released under [the MIT license](http://jmblog.mit-license.org/).

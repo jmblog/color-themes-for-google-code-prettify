@@ -1,0 +1,26 @@
+{
+  "name": "color-themes-for-google-code-prettify",
+  "description": "The selection of beautiful color themes for Google Code Prettify.",
+  "main": "",
+  "authors": [
+    "Yoshihide Jimbo"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "google",
+    "code",
+    "prettify",
+    "highlight",
+    "syntax",
+    "highlight",
+    "themes"
+  ],
+  "homepage": "https://github.com/jmblog/color-themes-for-google-code-prettify",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

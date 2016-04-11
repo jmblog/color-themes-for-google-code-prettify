@@ -1,0 +1,12 @@
+.segment {
+  padding: 3em 0;
+  background-color: #fff;
+
+  &.-striped {
+    background-color: $base07;
+  }
+
+  h2 {
+    margin-bottom: 2em;
+  }
+}

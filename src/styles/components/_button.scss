@@ -1,0 +1,50 @@
+.button {
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  outline: 0;
+  border: none;
+  vertical-align: baseline;
+  font-family: $font-family-sans-serif;
+  margin: 0 .5em 0 0;
+  padding: 1em 2em;
+  font-weight: 400;
+  line-height: 1em;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  border-radius: .3rem;
+  user-select: none;
+  color: #fff;
+  background-color: $color-magnetic-blue;
+  transition: all $link-transition-duration $link-transition-timing-function;
+
+  &:hover {
+    background-color: lighten($color-magnetic-blue, 5%);
+    color: #fff;
+  }
+
+  & > .octicon {
+    margin-right: .5em;
+    font-size: 1.2em;
+  }
+
+  &.-inverted {
+    color: $color-magnetic-blue;
+    background-color: #fff;
+    box-shadow: 0 0 0 2px $color-magnetic-blue inset !important;
+
+    &:hover {
+      background-color: $color-magnetic-blue;
+      color: #fff;
+    }
+  }
+
+  &.-large {
+    font-size: 1.2rem;
+  }
+
+  &.-compact {
+    font-size: .875rem;
+  }
+}

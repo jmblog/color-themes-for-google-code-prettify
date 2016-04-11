@@ -1,0 +1,6 @@
+@import "../../themes/colors/atelier-plateau-light";
+@import "../../themes/base";
+
+#atelier-plateau-light {
+  @include prettyprint();
+}

@@ -1,0 +1,6 @@
+@import "../../themes/colors/github";
+@import "../../themes/base";
+
+#github {
+  @include prettyprint();
+}

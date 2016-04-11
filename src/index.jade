@@ -1,0 +1,90 @@
+doctype html
+html(lang="en")
+  head
+    base(href="/")
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    title Color themes for Google Code Prettify
+    meta(name="description" content="The selection of beautiful color themes for Google Code Prettify.")
+    link(rel="dns-prefetch" href="//fonts.googleapis.com")
+    script(src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato:400,300")
+    link(rel="stylesheet" href='styles/main.css')
+    each theme in themes
+      link(rel="stylesheet" href="styles/theme-previews/#{theme.id}.css")
+
+  body
+    header.cover
+      .container
+        h1.cover__title
+          = 'Color themes'
+          span.preposition
+            = ' for '
+          = 'Google Code Prettify'
+        h2.cover__subtitle
+          | Make your code snippets more pretty
+        p.cover__buttons
+          a.button.-large(href="https://github.com/jmblog/color-themes-for-google-code-prettify")
+            i.octicon.octicon-mark-github
+            | View on GitHub
+    main
+      .getting-started.segment.u-text-center
+        .container
+          h2 Installation
+          p
+            code.-shell npm install color-themes-for-google-code-prettify
+          p
+            = 'or '
+          p
+            code.-shell bower install color-themes-for-google-code-prettify
+          p
+            = 'or '
+          p
+            a.button
+              i.octicon.octicon-desktop-download
+              | Download a zip file
+  
+      .segment.-striped
+        .container
+          each theme in themes
+            .theme
+              .theme__info
+                h3.theme__title
+                  | #{theme.name}
+                if theme.original
+                  .theme__meta Original by !{theme.original}
+                if theme.ported_by
+                  .theme__meta Ported by !{theme.ported_by}
+                
+                .theme__download
+                  a.button.-compact.-inverted(href="/themes/#{theme.id}.css") Download
+
+              .theme__preview(id="#{theme.id}")
+                pre.prettyprint.linenums.lang-html
+                  code &lt;script type="text/javascript"&gt;
+                    | // Say hello world until the user starts questioning
+                    | // the meaningfulness of their existence.
+                    | function helloWorld(world) {
+                    |   for (var i = 42; --i >= 0;) {
+                    |     alert('Hello ' + String(world));
+                    |   }
+                    | }
+                    | &lt;/script&gt;
+                    | &lt;style&gt;
+                    | p { color: pink }
+                    | b { color: blue }
+                    | u { color: "umber" }
+                    | &lt;/style&gt;
+
+          h3 Are you looking for more themes?
+          ul
+            li: a(href="https://cdn.rawgit.com/google/code-prettify/master/styles/index.html") Google Code Prettify official theme gallery
+            li: a(href="http://raphaelddl.github.io/google-prettify-monokai-theme/") Monokai theme by @RaphaelDDL
+    footer
+      .segment
+        .container
+          != '&copy; '
+          a(href="https://github.com/jmblog/") Yoshihide Jimbo
+          != ', Released under '
+          a(href="http://jmblog.mit-license.org/") MIT License

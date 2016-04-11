@@ -1,0 +1,24 @@
+.getting-started {
+  code {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    background-color: $base06;
+    padding: 1em 1.5em;
+    border-radius: 3px;
+
+    @include media-breakpoint-up(sm) {
+      & {
+        width: 40em;
+      }
+    }
+
+    &.-shell {
+      &:before {
+        content: '$';
+        margin-right: 1em;
+        color: $base04;
+      }
+    }
+  }
+}
