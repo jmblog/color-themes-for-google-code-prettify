@@ -1,7 +1,11 @@
 doctype html
 html(lang="en")
+  | <!-- generated at #{Date()} -->
   head
-    base(href="/")
+    if process.env.NODE_ENV == 'production'
+      base(href="/color-themes-for-google-code-prettify/")
+    else
+      base(href="/")
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     meta(http-equiv="x-ua-compatible" content="ie=edge")
@@ -41,7 +45,7 @@ html(lang="en")
           p
             = 'or '
           p
-            a.button
+            a.button(href="https://github.com/jmblog/color-themes-for-google-code-prettify/releases/download/v2.0/themes.zip")
               i.octicon.octicon-desktop-download
               | Download a zip file
   

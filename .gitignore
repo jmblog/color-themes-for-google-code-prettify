@@ -6,4 +6,5 @@ node_modules
 .DS_Store
 .sass-cache/
 *.css.map
-dist/
+dist/index.html
+dist/styles/

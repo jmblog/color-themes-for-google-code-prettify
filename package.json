@@ -17,7 +17,7 @@
     "start": "gulp watch",
     "clean": "gulp clean",
     "build": "gulp",
-    "deploy": "gulp && gh-pages -d dist"
+    "deploy": "NODE_ENV=production npm run build && gh-pages -d dist"
   },
   "repository": "jmblog/color-themes-for-google-code-prettify",
   "author": "Yoshihide Jimbo",
