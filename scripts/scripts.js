@@ -1,0 +1,1 @@
+function load(){var e=document.querySelectorAll(".js-download-theme");[].forEach.call(e,function(e){e.addEventListener("click",function(n){ga("send","event","Download","click",e.dataset.themeId)})})}document.addEventListener("DOMContentLoaded",load,!1);
