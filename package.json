@@ -39,6 +39,7 @@
     "css-mqpacker": "^4.0.1",
     "csswring": "^4.2.2",
     "del": "^2.2.0",
+    "gh-pages": "^0.11.0",
     "glob": "^7.0.3",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-concat": "^2.6.0",
