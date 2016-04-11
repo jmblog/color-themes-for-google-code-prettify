@@ -18,8 +18,7 @@ gulp.task('build', gulp.series(
   clean,
   gulp.parallel(
     view,
-    styles,
-    gulp.series(themes, themesMin),
+    gulp.series(styles, themes, themesMin, concatStyles),
     images,
     octicons
   )
@@ -91,6 +90,12 @@ function themesMin() {
       suffix: '.min'
     }))
     .pipe(gulp.dest('dist/themes'))
+}
+
+function concatStyles() {
+  return gulp.src('dist/styles/**/*.css')
+    .pipe($.concat('styles.css'))
+    .pipe(gulp.dest('dist/styles'));
 }
 
 function images() {

@@ -41,6 +41,7 @@
     "del": "^2.2.0",
     "glob": "^7.0.3",
     "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^2.4.0",
     "gulp-jade": "^1.1.0",
     "gulp-load-plugins": "^1.2.0",

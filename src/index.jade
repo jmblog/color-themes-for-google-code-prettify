@@ -12,11 +12,10 @@ html(lang="en")
     title Color themes for Google Code Prettify
     meta(name="description" content="The selection of beautiful color themes for Google Code Prettify.")
     link(rel="dns-prefetch" href="//fonts.googleapis.com")
+    link(rel="dns-prefetch" href="//cdn.rawgit.com")
     script(src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js")
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato:400,300")
-    link(rel="stylesheet" href='styles/main.css')
-    each theme in themes
-      link(rel="stylesheet" href="styles/theme-previews/#{theme.id}.css")
+    link(rel="stylesheet" href='styles/styles.css')
 
   body
     header.cover
