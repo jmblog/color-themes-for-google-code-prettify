@@ -14,7 +14,7 @@ npm install color-themes-for-google-code-prettify
 
 **Download**
 
-See https://github.com/jmblog/color-themes-for-google-code-prettify/releases
+Download from https://jmblog.github.io/color-themes-for-google-code-prettify/themes.zip
 
 ## Contributing
 
