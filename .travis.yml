@@ -1,4 +1,6 @@
 language: node_js
-node_js:
-  - "5.9.0"
-script: npm run deploy
+node_js: 5.9.0
+script: ./scripts/deploy.sh
+env:
+  global:
+    secure: ERQ+xrt/e/NnY3N4vVoagI4BXax076Imh8ZqD5981+akZlQrITtm8bMTvh1+DA/1aYW5f87pe0GFGbnJ0Q55cBkAhNux+ggnfyitwZMRDHExK6WYdwpi+khiV9sfBJ7q9hrsAcxZdMYCcfJ+JlqctwC/hjJBlW11vSzhUneBUc4=
