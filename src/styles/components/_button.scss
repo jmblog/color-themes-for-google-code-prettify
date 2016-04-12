@@ -19,7 +19,8 @@
   background-color: $color-magnetic-blue;
   transition: all $link-transition-duration $link-transition-timing-function;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: lighten($color-magnetic-blue, 5%);
     color: #fff;
   }
