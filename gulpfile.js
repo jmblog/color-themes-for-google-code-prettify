@@ -1,6 +1,5 @@
 var gulp         = require('gulp');
 var fs           = require('fs');
-var devtools     = require('postcss-devtools');
 var autoprefixer = require('autoprefixer');
 var csswring     = require('csswring');
 var mqpacker     = require('css-mqpacker');
@@ -17,7 +16,7 @@ gulp.task('build', gulp.series(
   clean,
   gulp.parallel(
     view,
-    gulp.series(styles, themes, themesMin, concatStyles),
+    gulp.series(styles, themes, themesMin, license, concatStyles),
     scripts,
     images,
     octicons
@@ -53,7 +52,6 @@ function styles() {
     .pipe($.sassGlob())
     .pipe($.sass())
     .pipe($.postcss([
-      devtools(),
       autoprefixer(),
       mqpacker(),
       csswring()
@@ -72,7 +70,6 @@ function themes() {
       outputStyle: 'expanded'
     }))
     .pipe($.postcss([
-      devtools(),
       autoprefixer(),
       mqpacker()
     ]))
@@ -82,13 +79,19 @@ function themes() {
 
 function themesMin() {
   return gulp.src('dist/themes/!(*.min).css')
-    .pipe($.size({showFiles: true}))
     .pipe($.postcss([
       csswring()
     ]))
     .pipe($.rename({
       suffix: '.min'
     }))
+    .pipe(gulp.dest('dist/themes'))
+}
+
+function license() {
+  const license = "/*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */\n"
+  return gulp.src('dist/themes/*.css')
+    .pipe($.insert.prepend(license))
     .pipe(gulp.dest('dist/themes'))
 }
 
@@ -127,8 +130,8 @@ function serve() {
     server: 'dist'
   });
 
-  gulp.watch('src/styles/**/*.scss', gulp.series(styles, themes, themesMin, concatStyles));
-  gulp.watch('src/themes/**/*.scss', gulp.series(styles, themes, themesMin, concatStyles));
+  gulp.watch('src/styles/**/*.scss', gulp.series(styles, themes, themesMin, license, concatStyles));
+  gulp.watch('src/themes/**/*.scss', gulp.series(styles, themes, themesMin, license, concatStyles));
   gulp.watch('src/themes.json', gulp.series(loadJSON, view, reloadBrowser));
   gulp.watch('src/**/*.jade', gulp.series(view, reloadBrowser));
   gulp.watch('src/scripts/**/*.js', gulp.series(scripts, reloadBrowser));
