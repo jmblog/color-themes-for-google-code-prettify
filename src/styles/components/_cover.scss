@@ -12,17 +12,25 @@
     font-family: "Fjalla One", $font-family-sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
-    line-height: 1.7;
+    line-height: 1.5;
 
     @include media-breakpoint-up(lg) {
       & {
         font-size: 3.4rem;
+        line-height: 1.7;
       }
     }
 
     .preposition {
       display: block;
-      font-size: 1.8rem;
+      font-size: 1.4rem;
+
+      @include media-breakpoint-up(lg) {
+        & {
+          font-size: 1.8rem;
+          line-height: 1.7;
+        }
+      }
     }
   }
 

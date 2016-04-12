@@ -11,7 +11,6 @@
   }
 
   &__info {
-    flex-basis: 30%;
     padding: 1.5em;
     background-color: #fff;
     border-top: 1px solid $base07;
@@ -23,6 +22,7 @@
 
     @include media-breakpoint-up(lg) {
       & {
+        flex-basis: 30%;
         border-right: 1px solid $base07;
       }
     }
@@ -58,20 +58,17 @@
         bottom: 3em;
       }
     }
-
-    // @include media-breakpoint-up(md) {
-    //   & {
-    //     display: block;
-    //     top: 1.5em;
-    //     right: 1.5em;
-    //   }
-    // }
   }
 
 
   &__preview {
-    flex-basis: 70%;
-    overflow: hidden;
+    overflow-x: hidden;
+
+    @include media-breakpoint-up(lg) {
+      & {
+        flex-basis: 70%;
+      }
+    }
 
     .prettyprint {
       width: 100%;

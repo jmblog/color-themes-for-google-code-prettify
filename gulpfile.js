@@ -5,7 +5,6 @@ var autoprefixer = require('autoprefixer');
 var csswring     = require('csswring');
 var mqpacker     = require('css-mqpacker');
 var del          = require('del');
-var glob         = require('glob');
 var $            = require('gulp-load-plugins')();
 var browserSync  = require('browser-sync');
 var reload       = browserSync.reload;
@@ -94,7 +93,10 @@ function themesMin() {
 }
 
 function concatStyles() {
-  return gulp.src('dist/styles/**/*.css')
+  return gulp.src([
+    'dist/styles/main.css',
+    'dist/styles/theme-previews/**/*.css'
+  ])
     .pipe($.concat('styles.css'))
     .pipe(gulp.dest('dist/styles'));
 }
@@ -125,8 +127,8 @@ function serve() {
     server: 'dist'
   });
 
-  gulp.watch('src/styles/**/*.scss', gulp.series(styles, themes, themesMin));
-  gulp.watch('src/themes/**/*.scss', gulp.series(styles, themes, themesMin));
+  gulp.watch('src/styles/**/*.scss', gulp.series(styles, themes, themesMin, concatStyles));
+  gulp.watch('src/themes/**/*.scss', gulp.series(styles, themes, themesMin, concatStyles));
   gulp.watch('src/themes.json', gulp.series(loadJSON, view, reloadBrowser));
   gulp.watch('src/**/*.jade', gulp.series(view, reloadBrowser));
   gulp.watch('src/scripts/**/*.js', gulp.series(scripts, reloadBrowser));
