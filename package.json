@@ -1,6 +1,6 @@
 {
   "name": "color-themes-for-google-code-prettify",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "The selection of beautiful color themes for Google Code Prettify.",
   "keywords": [
     "google code prettify",
@@ -52,6 +52,7 @@
     "gulp-sass": "^2.2.0",
     "gulp-sass-glob": "^1.0.5",
     "gulp-size": "^2.1.0",
-    "gulp-uglify": "^1.5.3"
+    "gulp-uglify": "^1.5.3",
+    "gulp-zip": "^3.2.0"
   }
 }

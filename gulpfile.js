@@ -16,7 +16,7 @@ gulp.task('build', gulp.series(
   clean,
   gulp.parallel(
     view,
-    gulp.series(styles, themes, themesMin, license, concatStyles),
+    gulp.series(styles, themes, minifyThemes, license, zipThemes, concatStyles),
     scripts,
     images,
     octicons
@@ -77,7 +77,7 @@ function themes() {
     .pipe(reload({stream: true}));
 }
 
-function themesMin() {
+function minifyThemes() {
   return gulp.src('dist/themes/!(*.min).css')
     .pipe($.postcss([
       csswring()
@@ -93,6 +93,12 @@ function license() {
   return gulp.src('dist/themes/*.css')
     .pipe($.insert.prepend(license))
     .pipe(gulp.dest('dist/themes'))
+}
+
+function zipThemes() {
+  return gulp.src('dist/themes/**/*')
+    .pipe($.zip('themes.zip'))
+    .pipe(gulp.dest('dist'))
 }
 
 function concatStyles() {
@@ -130,8 +136,8 @@ function serve() {
     server: 'dist'
   });
 
-  gulp.watch('src/styles/**/*.scss', gulp.series(styles, themes, themesMin, license, concatStyles));
-  gulp.watch('src/themes/**/*.scss', gulp.series(styles, themes, themesMin, license, concatStyles));
+  gulp.watch('src/styles/**/*.scss', gulp.series(styles, themes, minifyThemes, license, concatStyles));
+  gulp.watch('src/themes/**/*.scss', gulp.series(styles, themes, minifyThemes, license, concatStyles));
   gulp.watch('src/themes.json', gulp.series(loadJSON, view, reloadBrowser));
   gulp.watch('src/**/*.jade', gulp.series(view, reloadBrowser));
   gulp.watch('src/scripts/**/*.js', gulp.series(scripts, reloadBrowser));
