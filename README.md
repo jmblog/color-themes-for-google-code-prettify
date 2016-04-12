@@ -2,7 +2,14 @@
 
 > The selection of beautiful color themes for Google Code Prettify.
 
+
 [![Build Status](https://travis-ci.org/jmblog/color-themes-for-google-code-prettify.svg?branch=master)](https://travis-ci.org/jmblog/color-themes-for-google-code-prettify)
+
+
+## Preview
+
+https://jmblog.github.io/color-themes-for-google-code-prettify/
+
 
 ## Installation
 
@@ -14,7 +21,7 @@ npm install color-themes-for-google-code-prettify
 
 **Download**
 
-Download from https://jmblog.github.io/color-themes-for-google-code-prettify/themes.zip
+https://jmblog.github.io/color-themes-for-google-code-prettify/themes.zip
 
 ## Contributing
 
