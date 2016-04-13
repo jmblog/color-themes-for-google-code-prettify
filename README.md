@@ -2,8 +2,7 @@
 
 > The selection of beautiful color themes for Google Code Prettify.
 
-
-[![Build Status](https://travis-ci.org/jmblog/color-themes-for-google-code-prettify.svg?branch=master)](https://travis-ci.org/jmblog/color-themes-for-google-code-prettify)
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
 
 ## Demo
@@ -29,3 +28,9 @@ contribution process easy and effective for everyone involved.
 
 ## License
 Code released under [the MIT license](http://jmblog.mit-license.org/).
+
+[npm-url]: https://npmjs.org/package/color-themes-for-google-code-prettify
+[downloads-image]: http://img.shields.io/npm/dm/color-themes-for-google-code-prettify.svg
+[npm-image]: http://img.shields.io/npm/v/color-themes-for-google-code-prettify.svg
+[travis-url]: https://travis-ci.org/jmblog/color-themes-for-google-code-prettify
+[travis-image]: http://img.shields.io/travis/jmblog/color-themes-for-google-code-prettify.svg
