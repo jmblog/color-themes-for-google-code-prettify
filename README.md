@@ -23,8 +23,7 @@ https://jmblog.github.io/color-themes-for-google-code-prettify/themes.zip
 
 ## Contributing
 
-Please read the [contribution guidelines](CONTRIBUTING.md) in order to make the
-contribution process easy and effective for everyone involved.
+Please read the [contribution guidelines](CONTRIBUTING.md) to make the contribution process easy and efficient for everyone involved.
 
 ## License
 Code released under [the MIT license](http://jmblog.mit-license.org/).

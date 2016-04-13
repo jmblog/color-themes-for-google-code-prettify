@@ -9,3 +9,4 @@ node_modules
 dist/index.html
 dist/styles/
 dist/scripts/
+dist/sitemap.xml

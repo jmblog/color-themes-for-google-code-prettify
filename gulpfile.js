@@ -19,7 +19,8 @@ gulp.task('build', gulp.series(
     gulp.series(styles, themes, minifyThemes, license, zipThemes, concatStyles),
     scripts,
     images,
-    octicons
+    octicons,
+    extra
   )
 ));
 gulp.task(clean);
@@ -125,6 +126,13 @@ function images() {
 function octicons() {
   return gulp.src('src/styles/components/octicons/*.{eot,svg,ttf,woff}')
     .pipe(gulp.dest('dist/styles/octicons'));
+}
+
+function extra() {
+  return gulp.src([
+    'src/sitemap.xml'
+  ])
+    .pipe(gulp.dest('dist'));
 }
 
 function reloadBrowser() {
