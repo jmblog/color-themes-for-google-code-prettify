@@ -6,10 +6,9 @@
 [![Build Status](https://travis-ci.org/jmblog/color-themes-for-google-code-prettify.svg?branch=master)](https://travis-ci.org/jmblog/color-themes-for-google-code-prettify)
 
 
-## Preview
+## Demo
 
 https://jmblog.github.io/color-themes-for-google-code-prettify/
-
 
 ## Installation
 
@@ -19,7 +18,7 @@ https://jmblog.github.io/color-themes-for-google-code-prettify/
 npm install color-themes-for-google-code-prettify
 ```
 
-**Download**
+**Download a zip file**
 
 https://jmblog.github.io/color-themes-for-google-code-prettify/themes.zip
 
