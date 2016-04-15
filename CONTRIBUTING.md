@@ -1,6 +1,6 @@
 # Contributing guidelines
 
-Your contribution is always welcome! If you create a new nice theme, find a bug or propose an improvement, send me a pull request.
+Your contribution is always welcome! If you create a new beautiful theme, find a bug or propose an improvement, please send me a pull request.
 
 1. Fork this repo, clone your fork and configure the remotes:
 
