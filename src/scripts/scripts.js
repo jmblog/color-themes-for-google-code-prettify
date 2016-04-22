@@ -19,7 +19,7 @@ var filterThemes = function() {
         }, 100);
       });
       if (window.ga) {
-        ga('send', 'event', 'Filter', 'click', filter.getAttribute('data-filter'));
+        ga('send', 'event', 'Filter', 'click', filter.getAttribute('data-filter') || 'all');
       }
     })
   });
