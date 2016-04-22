@@ -1,0 +1,41 @@
+.tabs {
+  display: none;
+
+  @include media-breakpoint-up(sm) {
+    & {
+      display: inline-block;
+      margin-bottom: 3em;
+
+      .tab:first-child {
+        border-top-left-radius: .3rem;
+        border-bottom-left-radius: .3rem;
+        margin-left: 0;
+      }
+
+      .tab:last-child {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+      }
+
+      .tab {
+        display: inline-block;
+        padding: .5em 2em;
+        text-decoration: none;
+        color: $color-magnetic-blue;
+        background-color: #fff;
+        box-shadow: 0 0 0 2px $color-magnetic-blue inset !important;
+        margin-left: -2px;
+
+        &:hover {
+          color: #fff;
+          background-color: lighten($color-magnetic-blue, 10%);
+        }
+
+        &.-selected {
+          color: #fff;
+          background-color: $color-magnetic-blue;
+        }
+      }
+    }
+  }
+}
