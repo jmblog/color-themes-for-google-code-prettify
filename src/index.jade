@@ -60,8 +60,13 @@ html(lang="en")
   
       .segment.-striped
         .container
+          .u-text-center
+            .tabs
+              a.tab.js-theme-filter.-selected(href="#" data-filter="") All
+              a.tab.js-theme-filter(href="#" data-filter="dark") Dark themes
+              a.tab.js-theme-filter(href="#" data-filter="light") Light themes
           each theme in themes
-            .theme
+            .theme.js-theme(data-theme-type="#{theme.type}")
               .theme__info
                 h3.theme__title
                   | #{theme.name}
