@@ -5,4 +5,15 @@ h4,
 h5,
 h6 {
   font-weight: 400;
+
+  small {
+    display: block;
+    margin-top: 1em;
+    font-size: .6em;
+    font-weight: 300;
+  }
+}
+
+h2 {
+  font-size: 1.8rem;
 }

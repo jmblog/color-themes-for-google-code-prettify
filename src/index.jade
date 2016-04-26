@@ -44,7 +44,15 @@ html(lang="en")
     main
       .getting-started.segment.u-text-center
         .container
-          h2 Installation
+          h2
+            | Installation
+            small
+              = '(Included '
+              strong CSS
+              = ' and ' 
+              strong Sass
+              = ' files of all themes)'
+
           p
             code.-shell npm install color-themes-for-google-code-prettify
           p
@@ -57,9 +65,12 @@ html(lang="en")
             a.button.js-download-theme(href="themes.zip" data-theme-id="themes.zip")
               i.octicon.octicon-desktop-download
               | Download a zip file
+
   
       .segment.-striped
         .container
+          h2.u-text-center
+            | Previews
           .u-text-center
             .tabs
               a.tab.js-theme-filter.-selected(href="#" data-filter="") All
@@ -97,7 +108,7 @@ html(lang="en")
                     | &lt;/style&gt;
 
           h3 Are you looking for more themes?
-          ul
+          ul.list
             li: a(href="https://cdn.rawgit.com/google/code-prettify/master/styles/index.html") Google Code Prettify official theme gallery
             li: a(href="http://raphaelddl.github.io/google-prettify-monokai-theme/") Monokai theme by @RaphaelDDL
     footer
