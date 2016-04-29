@@ -1,6 +1,6 @@
 {
   "name": "color-themes-for-google-code-prettify",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "The selection of beautiful color themes for Google Code Prettify.",
   "keywords": [
     "google code prettify",
@@ -22,7 +22,9 @@
   "repository": "jmblog/color-themes-for-google-code-prettify",
   "author": "Yoshihide Jimbo",
   "contributors": [
-    "Yoshihide Jimbo"
+    "Yoshihide Jimbo",
+    "Serguei Shimansky",
+    "Bram de Haan"
   ],
   "license": "MIT",
   "bugs": {

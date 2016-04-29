@@ -70,6 +70,12 @@
     "ported_by": "<a href='http://github.com/jmblog'>Yoshihide Jimbo</a>"
   },
   {
+    "id": "tranquil-heart",
+    "name": "Tranquil Heart",
+    "type": "dark",
+    "original": "<a href='http://github.com/englishextra'>@englishextra</a>"
+  },
+  {
     "id": "atelier-cave-dark",
     "name": "Atelier Cave Dark",
     "type": "dark",

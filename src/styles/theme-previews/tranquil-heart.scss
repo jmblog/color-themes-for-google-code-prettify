@@ -1,0 +1,6 @@
+@import "../../themes/colors/tranquil-heart";
+@import "../../themes/base";
+
+#tranquil-heart {
+  @include prettyprint();
+}
